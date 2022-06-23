@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="410.675">
+    <testcase classname="Check Budget Calculator Functionality" name="Verify Budget Calculator Functionality" time="91.503">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User select type of project.............................................passed
+And User select space.......................................................passed
+And Size of home............................................................passed
+And User enters Carpet area.................................................passed
+Then User Click on the Calculate Now button.................................passed
+And Verify whether the recommended products are showing or not..............passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Budget Calculator Functionality" name="Verify the Advanced Budget Calculator Functionality for Interior space" time="61.848">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User Clicks on Advanced Calculator Link.................................passed
+And User Select Painting type...............................................passed
+And User Select space Interior for Paints...................................passed
+And User Select number of rooms '1'.........................................passed
+And User enters Width '10' Height '10' Length '13' of the room..............passed
+And User enters number of windows '3' and doors '1'.........................passed
+And User Select type of paint for WallA.....................................passed
+And User Select type of paint for WallB.....................................passed
+And User Select type of paint for WallC.....................................passed
+And User Select type of paint for WallD.....................................passed
+And User Select including ceiling or not 'True'.............................passed
+And User choose paints type and select paints...............................passed
+And User choose textures type and select textures...........................passed
+And User choose wallpaper type and select wallpaper.........................passed
+Then User Clicks on the Calculate now button................................passed
+And Verify whether user gets the paints within this budget..................passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Budget Calculator Functionality" name="Verify the Advanced Budget Calculator Functionality for Interior space for invalid width" time="48.525">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User Clicks on Advanced Calculator Link.................................passed
+And User Select Painting type...............................................passed
+And User Select space Interior for Paints...................................passed
+And User Select number of rooms '1'.........................................passed
+And User enters Width 'asda'................................................passed
+And Verify whether user gets error message for invalid width................passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Budget Calculator Functionality" name="Verify the Advanced Budget Calculator Functionality for Interior space for invalid length" time="51.839">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User Clicks on Advanced Calculator Link.................................passed
+And User Select Painting type...............................................passed
+And User Select space Interior for Paints...................................passed
+And User Select number of rooms '1'.........................................passed
+And User enters length 'asda'...............................................passed
+And Verify whether user gets error message for invalid length...............passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Budget Calculator Functionality" name="Verify the Advanced Budget Calculator Functionality for Interior space for invalid length 2" time="52.16">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User Clicks on Advanced Calculator Link.................................passed
+And User Select Painting type...............................................passed
+And User Select space Interior for Paints...................................passed
+And User Select number of rooms '1'.........................................passed
+And User enters height 'asda'...............................................passed
+And Verify whether user gets error message for invalid height...............passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Budget Calculator Functionality" name="Verify the Advanced Budget Calculator Functionality for Exterior space for valid credentials" time="51.971">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User Clicks on Advanced Calculator Link.................................passed
+And User Select Painting type 'Re-Painting'.................................passed
+And User Select space Exterior for Paints...................................passed
+And User Enters carpet Area data '1500'.....................................passed
+Then User Click on the Calculate Now button for Exterior....................passed
+And Verify whether user gets the exterior paints within this budget.........passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Check Budget Calculator Functionality" name="Verify the Advanced Budget Calculator Functionality for Exterior space for invalid carpet area" time="51.353">
+        <system-out><![CDATA[Given User open the browser.................................................passed
+When User Enter the url.....................................................passed
+And User hover on Paints and Texture tab....................................passed
+And User Clicks on the Paint Budget Calculator Link.........................passed
+And User Clicks on Advanced Calculator Link.................................passed
+And User Select Painting type 'Re-Painting'.................................passed
+And User Select space Exterior for Paints...................................passed
+And User Enters invalid carpet Area data 'abdg'.............................passed
+Then User Click on the Calculate Now button for Exterior....................passed
+And Verify whether user gets the error message 'Field should contain non-decimal value greater than 0'.passed
+And Closed the browser......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
