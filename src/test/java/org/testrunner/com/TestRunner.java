@@ -7,5 +7,5 @@ import io.cucumber.testng.CucumberOptions;
 		glue = {"org.budgetcalculator.com" }, monochrome = false, 
 		plugin = { "pretty", "html:target/HtmlReports.html","json:target/JsonReports/JsonReport.json", "junit:target/JunitReports/JunitReport.xml" })
 public class TestRunner extends AbstractTestNGCucumberTests {
-
+	
 }

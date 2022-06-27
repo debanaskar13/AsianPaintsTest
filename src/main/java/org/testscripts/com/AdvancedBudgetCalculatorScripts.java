@@ -1,17 +1,13 @@
 package org.testscripts.com;
 
 import org.excel.com.Excel;
-import org.openqa.selenium.support.PageFactory;
 import org.pages.com.AdvancedBudgetCalculator;
-import org.pages.com.HomePage;
 
 public class AdvancedBudgetCalculatorScripts {
-	private HomePage home;
 	private AdvancedBudgetCalculator calculator;
 	private Excel excel;
 	
 	public AdvancedBudgetCalculatorScripts() throws Exception {
-		home = new HomePage();
 		calculator = new AdvancedBudgetCalculator();
 		excel = new Excel();
 		excel.readExcel(2);
